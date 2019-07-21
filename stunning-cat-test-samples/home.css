@@ -4,121 +4,66 @@
 }
 
 body{
-    width: 95%;
     margin: auto;
 }
 
 header{
-    display: flex;
+    width: 100%;
     background: #53BF70;
-    align-items: center;
-    width: 95%;
-    position: fixed;
-    top: 0;
-}
-
-.logo-container{    
-    display: flex;
-    flex: 1;
-    align-items: center;  
-    color: white;
-    font-weight: bold;
-    font-size: 20px;  
-}
-
-.logo-container img{
-    width: 15%;
-}
-
-.logo{
-    flex: 1;
-   
-}
-
-.logo-container h3{
-    color: white;
-    flex: 3;
 }
 
 .search-bar{
-    width: 300px;
-    border: 1px solid transparent;
-    border-radius: 5px;
-    padding-left: 5px;
-    height: 38px;  
-    background-image: url('images/search-icon.png');
-    background-repeat: no-repeat;
-    background-position-x: right;
-    background-position-y: center;
-    outline: none;       
-    
+  color: black;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  padding-left: 5px;
+  background-image: url('images/search-icon.png');
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: center;
+  outline: none !important;
+}
+
+.search-bar::placeholder{
+  font-size: 14px;
 }
 
 .search-bar:focus{
     border: 1px solid #0d4a13;
 }
 
-.nav-bar{  
-    flex: 4; 
-    align-items: center;
-    display: flex;
+.navbar-brand{
+  color:white !important;
 }
 
-.nav-bar .nav-links{
-    list-style: none;    
-    display: flex;
-    margin-right: 50px;
-    flex: 2;
-    justify-content: space-around;
-    
+.nav-link{
+  color:white !important;
+  padding: 10px 20px !important;
+  transition: 0.3s all;
 }
 
-.nav-bar .nav-links .nav-link{
-    display: inline;
-    text-decoration: none;
-    color: black;
-    padding: 10px 25px;
-    transition: 0.3s;
-    font-size: 14px;
+.nav-link:hover{
+  background: white;
+  color: #53BF70 !important;
 }
 
-.nav-bar .nav-links .nav-link:hover{
-    background-color: #49915D;
-    font-weight: bold;
+#cat-slider{
+  margin-left: 3%;
+
 }
 
-.login-btn{
-    border: 1px solid transparent;
-    background-color: #FC6464;
-    border-radius: 5px;
-    color: white;
-    height: 32px;
-    margin-right: 20px;
-    flex: 1;
-    font-size: 14px;
-    transition: 0.3s;
-    outline: none;
+#cat-slider ul{
+  list-style: none;
 }
 
-.login-btn:hover{
-    cursor: pointer;
-    background-color: white;
-    color: #FC6464;
-    border: 1px solid #FC6464;
+#cat-slider ul li{
+  float: left;
+  width: 14%;
+  margin: 1%;
 }
 
-.container{
-    margin-top:80px;     
-}
-
-.img-section{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.cat-img{
-    height: 30vh;
+#cat-slider ul li img{
+    width: 100%;
     margin: 0 5px;
 }
 
@@ -129,53 +74,49 @@ header{
     margin: 10px auto;
 }
 
-.gallery{
-    display: flex;
-    width: 100%;
-    margin: auto;
-    justify-content: space-around;
-    flex-wrap: wrap;
+.cat img{
+  width: 100%;
 }
 
-.gallery .i-cat{
-    border: 1px solid gray;
-    width: 200px;  
-    height: 200px;
-    margin: 10px;
-    border-radius: 5px;
+.custom-shadow{
+  transition: 0.3s all;
 }
 
-.see-more{
-    width: 120px;
-    height: 50px;
-    border-radius: 5px;
-    margin: 10px 20px;
-    color : #53BF70;
-    font-weight: bold;
-    border: 2px solid #53BF70;
-    background-color: transparent;
-    transition: 0.3s;
+.custom-shadow:hover{
+  box-shadow: 3px 5px 15px -1px rgba(0,0,0,0.63);
 }
 
-.see-more:hover{
+.seemore{
+  width: 120px;
+  height: 50px;
+  border-radius: 5px;
+  color : #53BF70;
+  font-weight: bold;
+  border: 2px solid #53BF70;
+  background-color: transparent;
+  transition: 0.3s;
+}
+
+
+.seemore:hover{
     cursor: pointer;
     background-color: #53BF70;
     color: white;
     border-color: transparent;
 }
 
-.details{
-    padding: 0 80px;
+#details{
+    padding: 0 5%;
 }
 
 .subscribe, .account, .upload-photo{
     display: flex;
     align-items: center;
-    margin: 75px 0;
+    margin: 2% 0;
 }
 
 .left{
-    flex: 1;
+    flex: 2;
 }
 
 .right{
@@ -184,11 +125,11 @@ header{
 }
 
 .right img{
-    height: 55vh;    
+    width: 80%;
 }
 
 .left input[type="text"]{
-    width: 80%;
+    width: 60%;
     height: 6vh;
     border: 1px solid #53BF70;
     font-size: 14px;
@@ -197,7 +138,7 @@ header{
 
 .left input[type="submit"]{
     margin: 15px 0;
-    width: 81%;
+    width: 61%;
     border: 1px solid transparent;
     background-color: #53BF70;
     height: 48px;
@@ -214,6 +155,10 @@ header{
     font-weight: bold;
 }
 
+.left p{
+  width: 70%;
+}
+
 .account .left a{
     text-decoration: none;
     color: #073D03;
@@ -227,49 +172,104 @@ header{
 
 footer{
     background-color: #53BF70;
-    padding: 5px;
+    padding: 2%;
+    margin-top: 5%;
 }
 
-.email, .fb{
-    display: flex;
+footer ul{
+  display: flex;
+  flex-direction: column;
+}
+
+footer ul li{
     color: white;
     align-items: center;
-    padding: 5px;
+    display: flex;
+    margin-bottom: 2%;
 }
 
-.email p, .fb p{
-    margin-left: 5px;
-}
-
-.email img, .fb img{
-    height: 6vh;
+footer ul li img{
+  width: 6vh;
+  margin-right: 2%;
 }
 
 .company{
     text-align: center;
     color: white;
-    font-size: 16px;
-} 
-
-@media (max-width: 1150px){
-    .nav-bar .nav-links .nav-link{        
-        font-size: 12px;
-    }
+    font-size: 20px;
 }
 
-@media (max-width: 1100px){
-    .nav-bar .nav-links{
-        flex-direction: column;
-        text-align: center;
-        width: 100%;
-    }
 
-    .nav-bar .nav-links .nav-link{        
-        font-size: 10px;
-        
-    }
+/* Media queries */
+/* Tablet devices - 768px */
+@media screen and (max-width: 768px){
+  #cat-slider ul li{
+    width: 31%;
+  }
 
-    .nav-bar .nav-links li{
-        width:100%;
-    }
+  #gallery ul li{
+      width: 45%;
+  }
+
+  .left{
+    flex: 1;
+  }
+
+  .left p{
+    width: 100%;
+  }
+
+  .left input{
+    width: 100% !important;
+  }
+
+  .right{
+    flex: 1;
+  }
+}
+
+/* Mobile devices - 480px */
+@media screen and (max-width: 480px){
+  #cat-slider ul li{
+    width: 90%;
+  }
+
+  #gallery ul li{
+      width: 90%;
+  }
+
+  .subscribe, .account, .upload-photo{
+    flex-direction: column;
+    justify-content: center;
+  }
+
+
+  .right{
+    display: none;
+  }
+
+  .left p{
+    width: 100%;
+  }
+
+  .left input{
+    width: 100% !important;
+  }
+
+  footer ul{
+      font-size: 14px;
+  }
+
+  .company{
+    font-size: 18px;
+  }
+}
+
+
+@media screen and (max-width: 580px){
+  .custom-btn{
+    width: 100%;
+    margin: 0 !important;
+  }
+
 }
