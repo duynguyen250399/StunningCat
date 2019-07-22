@@ -1,0 +1,107 @@
+*{
+
+}
+
+.main-login{
+  width: 80%;
+  height: 600px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 3px 4px 21px -2px rgba(0,0,0,0.75);
+  font-family: Montserrat;
+}
+
+.main-login::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 75px;
+  height: 100%;
+  background: #53BF70;
+}
+
+.main-login::after{
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 75px;
+  height: 100%;
+  background: #53BF70;
+}
+
+.main-login h2{
+  text-align: center;
+  padding: 20px;
+  font-weight: 800;
+
+}
+
+.main-login form{
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 25px;
+}
+
+.main-login form h3{
+  font-weight: 400;
+}
+
+.main-login input{
+  width: 100%;
+  height: 40px;
+  outline: none;
+  border: 1px solid #53BF70;
+  padding-left: 5px;
+}
+
+.main-login input[type="submit"]{
+  color:white;
+  background: #53BF70;
+  transition: 0.3s all;
+  border: none;
+}
+
+.main-login input[type="submit"]:hover{
+  background: #318B49;
+}
+
+.main-login input[type="text"]:focus{
+  border: 1px solid #ba2222;
+}
+
+.main-login form a{
+  text-decoration: none;
+  color: #114E22;
+  transition: 0.2 all;
+}
+
+.main-login form a:hover{
+  color: red;
+}
+
+@media screen and (max-width: 800px){
+  .main-login form{
+    width: 100%;
+  }
+
+  .main-login form h3{
+    text-align: center;
+  }
+
+  .main-login::before, .main-login::after{
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 412px){
+  .main-login form h3{
+    font-size: 22px;
+  }
+}

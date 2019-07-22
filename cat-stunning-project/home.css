@@ -1,0 +1,288 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+}
+
+body{
+    margin: auto;
+}
+
+header{
+    width: 100%;
+    background: #53BF70;
+}
+
+.toggler-btn{
+  color: white !important;
+  border: 1px solid white !important;
+  outline: none !important;
+  padding: 10px 25px !important;
+  transition: 0.1s all;
+}
+
+.toggler-btn:hover{
+  color: #53BF70 !important;
+  background: white;
+}
+
+.search-bar{
+  color: black;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  padding-left: 5px;
+  background-image: url('images/search-icon.png');
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: center;
+  outline: none !important;
+}
+
+.search-bar::placeholder{
+  font-size: 14px;
+}
+
+.search-bar:focus{
+    border: 1px solid #0d4a13;
+}
+
+.navbar-brand{
+  color:white !important;
+}
+
+.nav-link{
+  color:white !important;
+  padding: 10px 20px !important;
+  transition: 0.3s all;
+}
+
+.nav-link:hover{
+  background: white;
+  color: #53BF70 !important;
+}
+
+#cat-slider{
+  margin-left: 3%;
+
+}
+
+#cat-slider ul{
+  list-style: none;
+}
+
+#cat-slider ul li{
+  float: left;
+  width: 14%;
+  margin: 1%;
+}
+
+#cat-slider ul li img{
+    width: 100%;
+    margin: 0 5px;
+}
+
+.line{
+    width: 90%;
+    background-color: #53BF70;
+    height: 3px;
+    margin: 10px auto;
+}
+
+.cat img{
+  width: 100%;
+}
+
+.custom-shadow{
+  transition: 0.3s all;
+}
+
+.custom-shadow:hover{
+  box-shadow: 3px 5px 15px -1px rgba(0,0,0,0.63);
+}
+
+.seemore{
+  width: 120px;
+  height: 50px;
+  border-radius: 5px;
+  color : #53BF70;
+  font-weight: bold;
+  border: 2px solid #53BF70;
+  background-color: transparent;
+  transition: 0.3s;
+}
+
+
+.seemore:hover{
+    cursor: pointer;
+    background-color: #53BF70;
+    color: white;
+    border-color: transparent;
+}
+
+#details{
+    padding: 0 5%;
+}
+
+.subscribe, .account, .upload-photo{
+    display: flex;
+    align-items: center;
+    margin: 2% 0;
+}
+
+.left{
+    flex: 2;
+}
+
+.right{
+    flex: 1;
+    text-align: right;
+}
+
+.right img{
+    width: 80%;
+}
+
+.left input[type="text"]{
+    width: 60%;
+    height: 6vh;
+    border: 1px solid #53BF70;
+    font-size: 14px;
+    padding-left: 5px;
+}
+
+.left input[type="submit"]{
+    margin: 15px 0;
+    width: 61%;
+    border: 1px solid transparent;
+    background-color: #53BF70;
+    height: 48px;
+    font-size: 14px;
+    color: white;
+    transition: 0.3s;
+}
+
+.left input[type="submit"]:hover{
+    background-color: white;
+    border: 1px solid #53BF70;
+    cursor: pointer;
+    color: #53BF70;
+    font-weight: bold;
+}
+
+.left p{
+  width: 70%;
+}
+
+.account .left a{
+    text-decoration: none;
+    color: #073D03;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.account .left a:hover{
+    color: #fa3232;
+}
+
+footer{
+    background-color: #53BF70;
+    padding: 2%;
+    margin-top: 5%;
+}
+
+footer ul{
+  display: flex;
+  flex-direction: column;
+}
+
+footer ul li{
+    color: white;
+    align-items: center;
+    display: flex;
+    margin-bottom: 2%;
+}
+
+footer ul li img{
+  width: 6vh;
+  margin-right: 2%;
+}
+
+.company{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+
+/* Media queries */
+/* Tablet devices - 768px */
+@media screen and (max-width: 768px){
+  #cat-slider ul li{
+    width: 31%;
+  }
+
+  #gallery ul li{
+      width: 45%;
+  }
+
+  .left{
+    flex: 1;
+  }
+
+  .left p{
+    width: 100%;
+  }
+
+  .left input{
+    width: 100% !important;
+  }
+
+  .right{
+    flex: 1;
+  }
+}
+
+/* Mobile devices - 480px */
+@media screen and (max-width: 480px){
+  #cat-slider ul li{
+    width: 90%;
+  }
+
+  #gallery ul li{
+      width: 90%;
+  }
+
+  .subscribe, .account, .upload-photo{
+    flex-direction: column;
+    justify-content: center;
+  }
+
+
+  .right{
+    display: none;
+  }
+
+  .left p{
+    width: 100%;
+  }
+
+  .left input{
+    width: 100% !important;
+  }
+
+  footer ul{
+      font-size: 14px;
+  }
+
+  .company{
+    font-size: 18px;
+  }
+}
+
+
+@media screen and (max-width: 580px){
+  .custom-btn{
+    width: 100%;
+    margin: 0 !important;
+  }
+
+}
