@@ -285,4 +285,16 @@ footer ul li img{
     margin: 0 !important;
   }
 
+  .jumbotron h1{
+    font-size: 28px;
+  }
+
+  .jumbotron p{
+    font-size: 16px !important;
+  }
+
+  #catCarousel{
+    width: 100% !important;
+  }
+    
 }
